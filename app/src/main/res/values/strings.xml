@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">App_BaseDeDatos</string>
     <string name="textView_text_titulo">Mantenimiento Contactos</string>
-
+    <string name="textView_text_titulo_listado">Lista de Contactos</string>
     <string name="edittext_hint_codigo">Ingrese el codigo</string>
     <string name="edittext_hint_nombre">Ingrese el nombre</string>
     <string name="edittext_hint_telefono">Ingrese el teléfono</string>
@@ -12,6 +12,7 @@
     <string name="button_text_buscar">Buscar</string>
     <string name="button_text_modificar">Modificar</string>
     <string name="button_text_eliminar">Eliminar</string>
+    <string name="button_text_mostrarContactos">Mostrar Contactos</string>
 
     <string name="button_text_limpiar">Limpiar</string>
 

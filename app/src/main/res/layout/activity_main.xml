@@ -97,4 +97,11 @@
         android:onClick="cliclimpiar"
         android:text="@string/button_text_limpiar" />
 
+    <Button
+        android:id="@+id/btn_mostrarContactos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="cliclmostrarcontactos"
+        android:text="@string/button_text_mostrarContactos" />
+
 </LinearLayout>
