@@ -33,7 +33,7 @@
         android:text="@string/editText_hide_nombre" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/et_apellido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -60,33 +60,38 @@
         android:text="@string/editText_hide_email" />
 
     <Button
-        android:id="@+id/btn_ingresar"
+        android:id="@+id/btn_agregar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="clicagregar"
         android:text="@string/button_text_agregar" />
 
     <Button
         android:id="@+id/btn_buscar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="clicbuscar"
         android:text="@string/button_text_buscar" />
 
     <Button
         android:id="@+id/btn_modificar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="clicmodificar"
         android:text="@string/button_text_modificar" />
 
     <Button
         android:id="@+id/btn_eliminar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="cliceliminar"
         android:text="@string/button_text_eliminar" />
 
     <Button
         android:id="@+id/btn_limpiar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="cliclimpiar"
         android:text="@string/button_text_limpiar" />
 
 </LinearLayout>
