@@ -37,7 +37,7 @@ private EditText et_codigo;
         btn_limpiar = findViewById(R.id.btn_limpiar);
     }
     public void clicagregar(View view){
-
+PersistirDatos persistirdatos = new PersistirDatos(this, "OCTAVODB",null, 1);
     }
     public void clicbuscar(View view){
 
