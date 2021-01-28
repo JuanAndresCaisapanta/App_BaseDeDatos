@@ -33,6 +33,15 @@
         android:text="@string/editText_hide_nombre" />
 
     <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/editText_hide_apellido"
+        android:inputType="textPersonName"
+        android:text="@string/editText_hide_apellido" />
+
+    <EditText
         android:id="@+id/et_telefono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -73,4 +82,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/button_text_eliminar" />
+
+    <Button
+        android:id="@+id/btn_limpiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_text_limpiar" />
+
 </LinearLayout>

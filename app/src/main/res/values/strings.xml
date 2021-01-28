@@ -6,10 +6,13 @@
     <string name="editText_hide_nombre">Ingrese el nombre</string>
     <string name="editText_hide_telefono">Ingrese el teléfono</string>
     <string name="editText_hide_email">Ingrese el correo</string>
+    <string name="editText_hide_apellido">Ingrese el apellido</string>
 
     <string name="button_text_agregar">Agregar</string>
     <string name="button_text_buscar">Buscar</string>
     <string name="button_text_modificar">Modificar</string>
     <string name="button_text_eliminar">Eliminar</string>
+
+    <string name="button_text_limpiar">Limpiar</string>
 
 </resources>
