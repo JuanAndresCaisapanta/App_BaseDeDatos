@@ -19,45 +19,48 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/editText_hide_codigo"
-        android:inputType="number"
-        android:text="@string/editText_hide_codigo" />
+        android:hint="@string/edittext_hint_codigo"
+        android:importantForAutofill="no"
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/et_nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:importantForAutofill="no"
         android:ems="10"
-        android:hint="@string/editText_hide_nombre"
-        android:inputType="textPersonName"
-        android:text="@string/editText_hide_nombre" />
+        android:hint="@string/edittext_hint_nombre"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/et_apellido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/editText_hide_apellido"
-        android:inputType="textPersonName"
-        android:text="@string/editText_hide_apellido" />
+        android:hint="@string/edittext_hint_apellido"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/et_telefono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/editText_hide_telefono"
+
+        android:hint="@string/edittext_hint_telefono"
+        android:importantForAutofill="no"
         android:inputType="phone"
-        android:text="@string/editText_hide_telefono" />
+         />
 
     <EditText
         android:id="@+id/et_correo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:importantForAutofill="no"
         android:ems="10"
-        android:hint="@string/editText_hide_email"
+        android:hint="@string/edittext_hint_email"
         android:inputType="textEmailAddress"
-        android:text="@string/editText_hide_email" />
+      />
 
     <Button
         android:id="@+id/btn_agregar"

@@ -2,10 +2,13 @@ package com.example.app_basededatos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 private EditText et_codigo;
@@ -36,9 +39,38 @@ private EditText et_codigo;
         btn_eliminar = findViewById(R.id.btn_eliminar);
         btn_limpiar = findViewById(R.id.btn_limpiar);
     }
-    public void clicagregar(View view){
-PersistirDatos persistirdatos = new PersistirDatos(this, "OCTAVODB",null, 1);
+    public void clicagregar(View view) {
+        PersistirDatos persistirdatos = new PersistirDatos(this, "OCTAVODB", null, 1);
+        SQLiteDatabase database = persistirdatos.getWritableDatabase();
+        String nombre = et_nombre.getText().toString();
+        String apellido = et_apellido.getText().toString();
+        String telefono = et_telefono.getText().toString();
+        String correo = et_correo.getText().toString();
+        ContentValues fila = new ContentValues();
+        fila.put("Nombre",nombre);
+        fila.put("Apellido",apellido);
+        fila.put("Telefono",telefono);
+        fila.put("Correo",correo);
+
+
+        long cantidad = database.insert("Contactos", null, fila);
+        if(cantidad >0){
+            Toast.makeText(this, "Contacto Agregado", Toast.LENGTH_LONG).show();
+        }else{
+            Toast.makeText(this, "El contacto no se pudo ingresar", Toast.LENGTH_LONG).show();
+        }
+        database.close();
+
+        limpiarcontroles();
     }
+
+    private void limpiarcontroles() {
+        et_nombre.setText("");
+        et_apellido.setText("");
+        et_correo.setText("");
+        et_telefono.setText("");
+    }
+
     public void clicbuscar(View view){
 
     }
@@ -49,6 +81,7 @@ PersistirDatos persistirdatos = new PersistirDatos(this, "OCTAVODB",null, 1);
 
     }
     public void cliclimpiar(View view){
-
+limpiarcontroles();
     }
+
 }
